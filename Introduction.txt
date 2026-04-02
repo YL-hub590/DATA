@@ -1,0 +1,25 @@
+
+***************    
+The process of data acquisition is as follows: The controller receives the command signal from the upper computer, and sends the command to the high voltage amplifier. After the command is amplified, it is fed to the piezoelectric positioning stage to produce a certain displacement. The displacement is measured by the capacitive sensor and acquired by the A/D converter, and then stored and processed in the upper computer. 
+The gain of the piezoelectric high voltage amplifier is 10. The range of the capacitive displacement sensor is 0~100um.
+The sampling frequency is 10 kHz.
+
+****************
+The names of the experimental data in the compressed package correspond to the pictures in the paper as follows:
+(1) Fig6. odd-bit data sets --->> Fig. 6. Test results of odd-bit data sets.
+(2) Fig7. even-bit data sets --->> Fig. 7. Test results of even-bit data sets.
+(3) Fig8. sine_3 Hz --->> Fig. 8. Response prediction with 3 Hz.
+(4) Fig9. Sine_15 Hz --->> Fig. 9. Response prediction with 15 Hz.
+(5) Fig10. Sine_30 Hz --->> Fig. 10. Response prediction with 30 Hz.
+(6) Fig11. Sine_60 Hz --->> Fig. 11. Response prediction with 60 Hz.
+(7) Fig12. Sine_VF_VA --->> Fig. 12. Performance comparison with other models.
+
+************
+Each matlab package contains three sets of data, their contents corresponding to the following:
+(1) time_xx -->> Time corresponding to the sampling point.
+(2) volt_xx -->> Sampling data of input voltage -- voltage data amplified by voltage amplifier.
+(3) disp_xx -->> Sampling data of output displacement of piezoelectric actuator driven by corresponding voltage.
+
+************
+Note: Due to the setting of the motion direction (The increase in voltage causes the actuator to elongate, which in turn reduces the distance between the actuator end face and the sensor electrode.), the displacement data collected by the sensor decreases when the input voltage increases. 
+Users need to pay attention to this when conducting data analysis!
